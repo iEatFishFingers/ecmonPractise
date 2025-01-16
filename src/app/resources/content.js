@@ -13,7 +13,7 @@ const person = {
 }
 
 const newsletter = {
-    display: true,
+    display: false,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
     description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
 }
@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Software Engineer</>,
-    subline: <>Hi, I'm Yohan! I'm a software engineer at <InlineCode>Hugo Boss</InlineCode>building cloud-based 3D automation solutions with tools like CLO 3D, Rhino, and Blender. I also explore AR, Three.js, and Unreal Engine. <br/> 
+    subline: <>Hi, I'm Yohan! I'm a software engineer at <InlineCode>Hugo Boss</InlineCode>building cloud-based 3D automation solutions with tools like CLO 3D,  and Blender. I also explore AR, Three.js, and Unreal Engine. <br/> 
 In my free time, I sharpen my video editing and VFX skills, creating music visualizers and 3D projects using Adobe After Effects, Blender, and Unreal Engine 5.
 
 
@@ -86,16 +86,12 @@ const about = {
                 timeframe: '2024 - Present',
                 role: 'Software Engineer',
                 achievements: [
-                    <>Create a 3D automation pipeline script to be ran on either a online server or locally for the business teams .</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Developed automation scripts for 3D designers using the CLO3D SDK API, leveraging Python and C++ to enhance design workflows and productivity. </>,
+                    <>Implemented 3D automation solutions utilizing Microsoft Azure virtual machines, creating custom render machines tailored to project specifications.</>,
+                    <>Investigated the potential of augmented reality (AR) technologies and delivered presentations on metaverse-related topics to inform and inspire internal stakeholders</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
+                
                 ]
             },
             {
@@ -103,8 +99,18 @@ const about = {
                 timeframe: '2022',
                 role: 'Content Creative',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Developed innovative content ideas and participated in the ideation process, leveraging tools such as Adobe Creative Suite for high-quality production</>,
+                    <>Collaborated with cross-functional teams to produce digital content, ensuring alignment with Channel 4’s brand and strategic objectives. </>
+                ],
+                images: [ ]
+            },
+            {
+                company: 'Dubit',
+                timeframe: '2022',
+                role: 'Roblox Developer',
+                achievements: [
+                    <>Developed and implemented core gameplay mechanics for the H&M fashion game using Lua scripting within the Roblox platform</>,
+                    <>Leveraged advanced 3D modelling skills to create high-quality assets and environments for a NASCAR game, utilizing tools such as Blender and Cinema4D.</>
                 ],
                 images: [ ]
             }
@@ -119,18 +125,21 @@ const about = {
                 description: <>Studied Computer Science.</>,
             },
             {
-                name: 'Sharpfutures',
-                description: <> learnt new skills in the creative, digital and tech sector. At the end 
-of the placement, I’ve been skilled up in the areas of: Production (Pre, during and Post) Graphic Design, Social Media Marketing and Web Development..</>,
+                name: 'SharpFutures Manchester CIC',
+                description: <>I undertook a range of courses covering skills such as production techniques, digital storytelling, ideas generation and pitching skills, alongside soft skills such as communication and teamwork</>,
+            },
+            {
+                name:'Xaverian Sixth Form College',
+                description: <>A-Level Computer Science<><br></br>A-Level Business<br></br></><>A-Level Statistics</></>
             }
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
+        display: false, // set to false to hide this section
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
+                title: 'Unreal Engine 5',
                 description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
@@ -149,7 +158,7 @@ of the placement, I’ve been skilled up in the areas of: Production (Pre, durin
                 ]
             },
             {
-                title: 'Next.js',
+                title: 'Python',
                 description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
